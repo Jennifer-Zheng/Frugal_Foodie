@@ -1,6 +1,9 @@
 body {
   position: relative;
   font-family: 'Crete Round', serif;
+  background-image: url(../img/food.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #navbar {
@@ -59,8 +62,6 @@ body {
 #hero {
   margin-top: 60px;
   height: 500px;
-  background: linear-gradient(to right, #ff5050, #ff9966);
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,7 +85,6 @@ body {
 #hero .description {
   text-align: center;
   line-height: 30px;
-  max-width: 400px;
   font-weight: 300;
 }
 
@@ -102,8 +102,50 @@ body {
     transform: translateY(-2px);
 }
 
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #features {
-  margin-top: 20px;
+  margin-top: 100px;
 
   display: flex;
   flex-direction: row;
