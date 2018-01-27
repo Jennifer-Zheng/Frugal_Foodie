@@ -7,22 +7,32 @@
         <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <link href="../assets/css/styles.css" rel="stylesheet">
+        <script src="../assets/js/index.js"></script>
     </head>
-
+    <body>
       <div>
         <!-- Navbar -->
         <nav id="navbar">
-          <a id="brand" href="#">
+          <a id="brand" href="../index.html">
             <span class="emphasize">Frugal Foodie</span>
           </a>
 
           <div class="links">
-            <a class="link" href="../index.html">Home</a>
             <a class="link" href="tips.html">Tips</a>
             <a class="link" href="recipes.html">Recipes</a>
+            <a class="link" href="gettingStarted.html">Help</a>
+          </div>
+          <div class="hidden-menu-container">
+                <button id="menu-btn">&#9776;</button>
+                <div id="hidden-menu">
+                    <button id="close-btn">&#215;</button>
+                    <a class="link" href="tips.html">Tips</a>
+                    <a class="link" href="recipes.html">Recipes</a>
+                    <a class="link" href="gettingStarted.html">Help</a>
+                </div>
           </div>
         </nav>
-    <body>
+
         <div class="main">
           <h1> How to start eating healthier, helping the environment and saving money!
           </h1>
