@@ -1,7 +1,11 @@
 body {
   position: relative;
   font-family: 'Crete Round', serif;
+  background-image: url(../img/food.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
+
 #navbar {
   height: 60px;
   width: 100%;
@@ -10,6 +14,7 @@ body {
 
   position: fixed;
   top: 0;
+  right: 0;
 
   z-index: 1;
 }
@@ -57,8 +62,6 @@ body {
 #hero {
   margin-top: 60px;
   height: 500px;
-  background: linear-gradient(to right, #ff5050, #ff9966);
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,10 +77,14 @@ body {
     height: 1px;
 }
 
+#hero .divider {
+    width: 100px;
+    background-color: black;
+}
+
 #hero .description {
   text-align: center;
   line-height: 30px;
-  max-width: 400px;
   font-weight: 300;
 }
 
@@ -95,8 +102,50 @@ body {
     transform: translateY(-2px);
 }
 
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #features {
-  margin-top: 20px;
+  margin-top: 100px;
 
   display: flex;
   flex-direction: row;
@@ -124,4 +173,87 @@ body {
 
 .feature img {
   height: 100px;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 650px) {
+    #navbar .links {
+        display: none;
+    }
+
+    #features {
+        flex-direction: column;
+    }
+
+    #features .feature {
+        flex: auto;
+    }
+
+    #navbar #brand {
+        left: 20px;
+    }
+
+    #menu-btn {
+        display: block !important;
+    }
+}
+
+@media (max-width: 425px) {
+
+}
+
+.hidden-menu-container {
+    height: 100%;
+    position: absolute;
+    right: 20px;
+}
+
+#menu-btn {
+    display: none;
+
+    color: black;
+    font-size: 26px;
+
+    line-height: 26px;
+    margin: 17px 0;
+    transform: translateY(-3px)
+
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.hidden-menu-container #hidden-menu {
+    display: none;
+
+    position: absolute;
+    bottom: -67px;
+    right: -1px;
+
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+
+    flex-direction: column;
+}
+
+.hidden-menu-container #hidden-menu.shown {
+    display: flex;
+}
+
+.hidden-menu-container #hidden-menu .link {
+    margin: 5px 10px;
+}
+
+.hidden-menu-container #hidden-menu #close-btn {
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    transform: translateY(-3px);
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background: none;
 }
