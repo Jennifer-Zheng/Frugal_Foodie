@@ -148,7 +148,7 @@ body {
 
 #features {
   margin-top: 120px;
-  color: black;
+  color: rgba(0,0,0,0);
   display: flex;
   flex-direction: row;
 
