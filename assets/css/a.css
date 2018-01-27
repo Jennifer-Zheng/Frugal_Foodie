@@ -3,7 +3,7 @@ body {
   font-family: 'Crete Round', serif;
   background-image: url(../img/food.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 #navbar {
@@ -30,11 +30,13 @@ body {
 }
 
 #brand .emphasize {
-  color: white;
-  background-color: #ff5050;
+  color: #F78E6A;
+  background-color: white;
   height: 20px;
-  border-radius: 5px;
+
+  border-radius: 30px;
   padding: 5px;
+  font-size: 25pt;
 
 }
 
@@ -44,7 +46,7 @@ body {
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -145,8 +147,8 @@ body {
 }
 
 #features {
-  margin-top: 100px;
-
+  margin-top: 120px;
+  color: black;
   display: flex;
   flex-direction: row;
 
@@ -268,8 +270,8 @@ body {
     padding: 20px; /* Some padding */
 }
 
+==================
 
-===============
 .layout{
     overflow:hidden;
     float: center;
