@@ -1,0 +1,38 @@
+[
+  {
+    "name" : "Tomato Scrambled Eggs",
+    "price" : 3.60,
+    "image" : "beans.jpg",
+    "type" : "breakfast"
+  },
+  {
+    "name" : "Banana Pancakes",
+    "price" : 2.80,
+    "image" : "hotdogs.jpg",
+    "type" : "breakfast"
+  },
+  {
+    "name" : "Broiled Eggplant Salad",
+    "price" : 4.50,
+    "image" : "spam.jpg",
+    "type" : "lunch"
+  },
+  {
+    "name" : "Cold Asian Noodles",
+    "price" : 1.25,
+    "image" : "refried.jpg",
+    "type" : "lunch"
+  },
+  {
+    "name" : "Creamy Zucchini Fettuccine",
+    "price" : 1.50,
+    "image" : "kidney.jpg",
+    "type" : "dinner"
+  },
+  {
+    "name" : "Chana Masala",
+    "price" : 3.00,
+    "image" : "gardenpeas.jpg",
+    "type" : "dinner"
+  },
+]
